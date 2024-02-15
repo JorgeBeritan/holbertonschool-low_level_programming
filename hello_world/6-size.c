@@ -5,8 +5,7 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-char a;
+{char a;
 int b;
 long int c;
 long long int d;
@@ -15,5 +14,4 @@ printf("Size of a char: %ld bytes(s)\n", sizeof(a));
 printf("Size of an int: %ld bytes(s)\n", sizeof(b));
 printf("Size of a long int: %ld bytes(s)\n", sizeof(c));
 printf("Size of a long long int: %ld bytes(s)\n", sizeof(d));
-printf("Size of a float: %ld bytes(s)\n", sizeof(e));
-}
+printf("Size of a float: %ld bytes(s)\n", sizeof(e)); }
