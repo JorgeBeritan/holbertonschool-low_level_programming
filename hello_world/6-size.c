@@ -14,4 +14,5 @@ printf("Size of a char: %ld byte(s)", sizeof(a));
 printf("Size of an int: %ld bytes(s)\n", sizeof(b));
 printf("Size of a long int: %ld bytes(s)\n", sizeof(c));
 printf("Size of a long long int: %ld byte(s)\n", sizeof(d));
-printf("Sieze of a float: %ld byte(s)\n", sizeof(e)); }
+printf("Sieze of a float: %ld byte(s)\n", sizeof(e));
+return (0); }
