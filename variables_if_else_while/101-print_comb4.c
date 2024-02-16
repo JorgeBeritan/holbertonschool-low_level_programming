@@ -16,13 +16,17 @@ int main(void)
 			for (k = '0'; k <= '9'; k++)
 			{
 				if (n < i && i < k)
+				{
 					putchar(n);
 					putchar(i);
 					putchar(k);
 
 					if (n != '7')
+					{
 						putchar(',');
 						putchar(' ');
+					}
+				}
 			}
 		}
 	}
