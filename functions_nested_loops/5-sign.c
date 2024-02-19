@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_sign - entry point
+ * @c - entry variable
+ *
+ * Return: 0 always
+ */
 int print_sign(int c)
 {
 	if (c > 0)
