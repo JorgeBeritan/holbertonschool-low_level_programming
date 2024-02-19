@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ *jack_bauer - entry point
+ *@minute: minutes
+ *@hour: hours
+ *
+ * Return: void
+ */
+
 void jack_bauer(void)
 {
 	for (int hour = 0; hour < 24; hour ++)
