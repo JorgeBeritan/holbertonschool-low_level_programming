@@ -2,7 +2,8 @@
 #include <ctype.h>
 
 /**
- * int _islower(int c) - entry point
+ * _islower - lowercase
+ * @c: variable que mide
  *
  * Return: Always 0
  */
