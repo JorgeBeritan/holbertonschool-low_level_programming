@@ -2,9 +2,6 @@
 
 /**
  * times_table - entry point
- * @i: value 1
- * @j: value 2
- * @k: value 3
  *
  * Return: void
  */
