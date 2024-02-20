@@ -10,10 +10,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-		if (i <= 0)
-		{
-			_putchar('\n');
-		}
 	}
 	_putchar('\n');
 }
