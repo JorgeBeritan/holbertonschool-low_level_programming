@@ -1,0 +1,19 @@
+#include "main.h"
+
+void print_line(int n)
+{
+	int i;
+
+	for (i = 0; i <= n; i++)
+	{
+		if (i > 0)
+		{
+			_putchar('_');
+		}
+		if (i <= 0)
+		{
+			_putchar('\n');
+		}
+	}
+	_putchar('\n');
+}
