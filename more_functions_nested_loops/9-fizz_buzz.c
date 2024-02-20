@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(void)
 {
-	int n, f, b;
+	int n;
 
 	for (n = 1; n < 101; n++)
 	{
