@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - Entry point
+ * print_diagonal - Entry point
  *@n: value
  *
  * Return: void
