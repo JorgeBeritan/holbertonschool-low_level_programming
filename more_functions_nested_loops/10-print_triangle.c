@@ -10,14 +10,14 @@ void print_triangle(int size)
 	}
 	else 
 	{
-		for (b = 1; b <= size ; b++)
+		for (b = 1; b < size ; b++)
 		{
 			_putchar('\n');
-			for (c = size - b; c > 0; c--)
+			for (c = size - b; c > 1; c--)
 			{
 				_putchar(' ');
 			}
-			for (d = 0; d < b; d++)
+			for (d = 0; d <= b; d++)
 			{
 				_putchar('#');
 			}
