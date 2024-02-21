@@ -2,7 +2,8 @@
 /**
  * reset_to_98 - Entry point
  *
- * Return: 
+ * Return:
+ */ 
 void reset_to_98(int *n)
 {
 	*n = 98;
