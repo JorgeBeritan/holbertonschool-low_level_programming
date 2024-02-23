@@ -2,10 +2,8 @@
 
 void puts2(char *str)
 {
-	while (*str != '\0')
-	{
-		_putchar(*str);
-		str += 2;
-	}
+	int a;
+	for (a = 0; str[a] != '\0'; a += 2)
+		_putchar(str[a]);
 	_putchar('\n');
 }
