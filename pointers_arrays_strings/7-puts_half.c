@@ -1,6 +1,7 @@
 #include "main.h"
 
-void puts_half(char *str)
+void
+puts_half(char *str)
 {
 	int i = 0;
 	int k;
@@ -11,7 +12,7 @@ void puts_half(char *str)
 	}
 	if (i % 2 == 1)
 	{
-		k = (i -1) / 2;
+		k = (i - 1) / 2;
 		k += 1;
 	}
 	else
@@ -23,4 +24,4 @@ void puts_half(char *str)
 		_putchar(str[k]);
 	}
 	_putchar('\n');
-}	
+}
