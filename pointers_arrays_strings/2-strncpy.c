@@ -2,7 +2,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *p = dest;
 	
-	while (*source && n--)
+	while (*src && n--)
 	{
 		*dest = *src;
 		dest++;
