@@ -1,33 +1,32 @@
 #include "main.h"
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i = 0;
 
-	while (str[i] != '\0')
+	while (s[i])
 	{
-	    
-        if (str[i] >= 'a' && str[i] <= 'z')
-        {
-            
-		if (str[i - 1] == 32 || str[i - 1] == 44 || str[i - 1] == 59 || str[i] == 46)
-		{
-			str[i] -=32;
-		}
-		if (str[i] == 33 || str[i] == 63 || str[i] == 34 || str[i] == 40)
-		{
-			str[i + 1] -= 32;
-		}
-		if (str[i] == 41 || str[i] == 123 || str[i] == 125)
-		{
-			str[i + 1] -= str[i] - 32;
-		}
-		if (str[i] == 9 || str[i] == 10)
-		{
-			str[i + 1] -= 32;
-		}
-        }
+		while (!(s[i] >= 'a' && s[i] <= 'z'))
+			i++;
+
+		if (s[i - 1] == ' ' ||
+		    s[i - 1] == '\t' ||
+		    s[i - 1] == '\n' ||
+		    s[i - 1] == ',' ||
+		    s[i - 1] == ';' ||
+		    s[i - 1] == '.' ||
+		    s[i - 1] == '!' ||
+		    s[i - 1] == '?' ||
+		    s[i - 1] == '"' ||
+		    s[i - 1] == '(' ||
+		    s[i - 1] == ')' ||
+		    s[i - 1] == '{' ||
+		    s[i - 1] == '}' ||
+		    i == 0)
+			s[i] -= 32;
+
 		i++;
 	}
-	return (str);
+
+	return (s);
 }
