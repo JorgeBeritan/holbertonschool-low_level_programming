@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-int *array_range(int min, int max)
+int
+*array_range(int min, int max)
 {
 	int *p;
 	int i, j = 0;
