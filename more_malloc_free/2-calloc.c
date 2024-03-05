@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+void
+*_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 	unsigned int i;
@@ -18,7 +19,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		}
 		return (p);
 	}
-	else 
+	else
 	{
 		return (NULL);
 	}
