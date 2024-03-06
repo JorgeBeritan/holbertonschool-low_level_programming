@@ -1,11 +1,12 @@
 #include "dog.h"
 #include <stdio.h>
 
-void print_dog(struct dog *d)
+void
+print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("(nil\n)");
+		printf("(nil)\n");
 		return;
 	}
 	printf("Name: ");
