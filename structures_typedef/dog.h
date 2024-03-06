@@ -1,6 +1,19 @@
-struct dog 
+#ifndef DOG_H
+#define DOG_H
+
+/**
+ * struct dog - estructra de datos
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of de dog
+ *
+ * Return: no necesary
+ */
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
+
+#endif
