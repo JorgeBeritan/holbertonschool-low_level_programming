@@ -6,6 +6,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *new_dog;
 	int name_len = 0, owner_len = 0;
 	char *name_copy, *owner_copy;
+
+	if (name == NULL || owner == NULL)
+		return (NULL);
 	
 	for (name_copy = name; *name_copy != '\0'; name_copy++)
 		name_len++;
