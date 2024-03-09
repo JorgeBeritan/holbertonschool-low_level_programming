@@ -10,16 +10,16 @@ main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	p = get_op_func(argv[2]);
-	
-	if(!p)
+
+	if (!p)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	printf ("%d\n", p(atoi(argv[1]), atoi(argv[3])));
+	printf("%d\n", p(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
