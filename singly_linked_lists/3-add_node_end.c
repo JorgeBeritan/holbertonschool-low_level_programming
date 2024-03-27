@@ -21,6 +21,7 @@ list_t
 
 		new->len = len;
 		new->str = strdup(str);
+		new->next = NULL;
 		if (*head == NULL)
 		{
 			new->next = *head;
