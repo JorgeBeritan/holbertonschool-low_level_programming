@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-void print_all(const char * const format, ...)
+void
+print_all(const char * const format, ...)
 {
 	va_list pa;
 	char *temp;
