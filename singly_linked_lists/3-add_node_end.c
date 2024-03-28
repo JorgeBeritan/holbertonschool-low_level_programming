@@ -31,7 +31,7 @@ list_t
 		{
 			new->next = NULL;
 			pointer = *head;
-			while (pointer->next)
+			while (pointer->next != NULL)
 			{
 				pointer = pointer->next;
 			}
