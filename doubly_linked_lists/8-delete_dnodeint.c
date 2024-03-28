@@ -1,6 +1,7 @@
 #include "lists.h"
 
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int
+delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *k, *prev;
 
@@ -12,9 +13,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index)
 	{
 		prev = k;
-		while (index-- && prev->next)
+		while (--index && prev->next)
 			prev = prev->next;
 		if (index)
+			return (-1);
+		k = prev->next;
+
+		if (!k)
 			return (-1);
 		prev->next = k->next;
 
@@ -25,7 +30,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		*head = k->next;
 
-		if(*head)
+		if (*head)
 			(*head)->prev = NULL;
 	}
 	free(k);
