@@ -1,6 +1,7 @@
 #include "main.h"
 
-void print_binary(unsigned long int n)
+void
+print_binary(unsigned long int n)
 {
 	unsigned long int k;
 	int i;
